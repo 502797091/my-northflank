@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "vless-ws",
-      "listen": "127.0.0.1",
+      "listen": "0.0.0.0",
       "listen_port": 8080,
       "users": [
         {
@@ -21,7 +21,7 @@
     {
       "type": "vless",
       "tag": "vless-grpc",
-      "listen": "127.0.0.1",
+      "listen": "0.0.0.0",
       "listen_port": 8081,
       "users": [
         {
