@@ -5,7 +5,7 @@
   "inbounds": [
     {
       "type": "vless",
-      "tag": "vless-in",
+      "tag": "vless-ws",
       "listen": "0.0.0.0",
       "listen_port": 8080,
       "users": [
@@ -14,11 +14,23 @@
         }
       ],
       "transport": {
-        "type": "http",
-        "host": [
-          "localhost"
-        ],
-        "path": "/vless"
+        "type": "ws",
+        "path": "/vless-ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-grpc",
+      "listen": "0.0.0.0",
+      "listen_port": 8080,
+      "users": [
+        {
+          "uuid": "aafffb06-ca65-4b78-84d4-5e07bb2ae14b"
+        }
+      ],
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc"
       }
     }
   ],
